@@ -1,3 +1,6 @@
+[![CircleCI](https://circleci.com/gh/carlos-plata/clouddevops-capstone.svg?style=svg)](https://circleci.com/gh/carlos-plata/clouddevops-capstone)
+
+
 # Udacity Nanoedegree - Cloud DevOps Engineer - Capstone project
 
 Uses AWS Cloudformation Template as base template. https://github.com/aws-samples/ecs-refarch-cloudformation
