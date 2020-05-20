@@ -1,5 +1,5 @@
 # Start from a small base
-FROM openjdk:8-jdk-stretch
+FROM openjdk:8-jdk-alpine
 
 # Add our application binary
 ARG JAR_FILE=target/*.jar
