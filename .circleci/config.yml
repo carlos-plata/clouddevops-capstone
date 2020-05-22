@@ -34,4 +34,12 @@ jobs: # a collection of steps
       - store_artifacts: # store the uberjar as an artifact
       # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: target/chatroom-starter-0.0.1-SNAPSHOT.jar
-      # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples    
+      # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
+      
+      - run: # Install the AWS CLI if it is not already included in the docker image
+           name: Install awscli 
+           command: sudo pip install awscli
+      
+      - run: # Deploy to S3 using the sync command
+           name: List S3 buckets
+           command: aws s3 ls 
