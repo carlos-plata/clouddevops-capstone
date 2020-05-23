@@ -54,4 +54,8 @@ jobs: # a collection of steps
                     
       - run: # Lists current dir
            name: Lists current dir
-           command: ls -l           
+           command: ls -l
+           
+      - run: # Creates cloudformation stack
+           name: Creates cloudformation stack
+           command: aws cloudformation create-stack --stack-name chatroom-stack --template-body file://cloudformation/master.yaml --capabilities CAPABILITY_NAMED_IAM --region=us-east-2
