@@ -54,4 +54,4 @@ jobs: # a collection of steps
            
       - run: # Pushes docker image
            name: Pushes docker image
-           command: docker push -t $DOCKERHUB_USERNAME/chatroom-starter
+           command: docker push $DOCKERHUB_USERNAME/chatroom-starter
