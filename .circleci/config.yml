@@ -51,11 +51,7 @@ jobs: # a collection of steps
       - run: # Builds docker image
            name: Builds docker image
            command: docker build -t $DOCKERHUB_USERNAME/chatroom-starter .
-           
-      - run: # Pushes docker image
-           name: Pushes docker image
-           command: docker push $DOCKERHUB_USERNAME/chatroom-starter
-           
+                    
       - run: # Lists current dir
            name: Lists current dir
            command: ls -l           
